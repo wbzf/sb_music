@@ -1,14 +1,25 @@
 <template>
   <div id="app">
-    <div class="test">日批</div>
+    <Header></Header>
   </div>
 </template>
-
-<style lang="scss">
-.test{
-  width: 100px;
-  height: 100px;
-  background: red;
-  transform: translate(100px, 100px);
+<script>
+import Header from '@/components/Header'
+export default {
+  name: 'App',
+  components: {
+    Header
+  },
+  methods: {
+  }
 }
+</script>
+<style scoped lang="scss">
+@import "assets/css/variable";
+.theme{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
 </style>
